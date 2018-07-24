@@ -1,4 +1,4 @@
-import {getMetadataArgsStorage} from "../../";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
 import {EntitySubscriberMetadataArgs} from "../../metadata-args/EntitySubscriberMetadataArgs";
 
 /**

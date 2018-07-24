@@ -1,4 +1,5 @@
-import {EntityOptions, getMetadataArgsStorage} from "../../";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
+import {EntityOptions} from "../options/EntityOptions";
 import {TableMetadataArgs} from "../../metadata-args/TableMetadataArgs";
 
 /**

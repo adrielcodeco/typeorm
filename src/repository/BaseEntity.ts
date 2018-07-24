@@ -1,5 +1,5 @@
 import {Repository} from "./Repository";
-import {getConnection} from "../index";
+import {getConnection} from "../common-functionality/getConnection";
 import {DeepPartial} from "../common/DeepPartial";
 import {SaveOptions} from "./SaveOptions";
 import {FindOneOptions} from "../find-options/FindOneOptions";

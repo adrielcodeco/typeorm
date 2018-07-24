@@ -1,4 +1,4 @@
-import {EntitySchema} from "../index";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 
 /**
  */

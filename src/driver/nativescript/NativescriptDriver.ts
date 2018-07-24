@@ -1,3 +1,4 @@
+import {DriverType} from "../DriverType";
 import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
 import {NativescriptConnectionOptions} from "./NativescriptConnectionOptions";
 import {NativescriptQueryRunner} from "./NativescriptQueryRunner";
@@ -14,6 +15,13 @@ export class NativescriptDriver extends AbstractSqliteDriver {
     // -------------------------------------------------------------------------
     // Public Properties
     // -------------------------------------------------------------------------
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.nativescript;
+    }
 
     /**
      * Connection options.

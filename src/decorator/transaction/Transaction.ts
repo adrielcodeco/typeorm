@@ -1,4 +1,9 @@
-import {getConnection, getMetadataArgsStorage, MongoRepository, Repository, TreeRepository, EntityManager} from "../../";
+import {getConnection} from "../../common-functionality/getConnection";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
+import {MongoRepository} from "../../repository/MongoRepository";
+import {Repository} from "../../repository/Repository";
+import {TreeRepository} from "../../repository/TreeRepository";
+import {EntityManager} from "../../entity-manager/EntityManager";
 import {TransactionOptions} from "../options/TransactionOptions";
 import {IsolationLevel} from "../../driver/types/IsolationLevel";
 

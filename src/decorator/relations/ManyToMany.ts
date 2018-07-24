@@ -1,4 +1,6 @@
-import {getMetadataArgsStorage, ObjectType, RelationOptions} from "../../";
+import {RelationOptions} from "../options/RelationOptions";
+import {ObjectType} from "../../common/ObjectType";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
 import {RelationMetadataArgs} from "../../metadata-args/RelationMetadataArgs";
 
 /**

@@ -1,4 +1,5 @@
 import {Driver} from "../Driver";
+import {DriverType} from "../DriverType";
 import {ConnectionIsNotSetError} from "../../error/ConnectionIsNotSetError";
 import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
 import {MongoQueryRunner} from "./MongoQueryRunner";
@@ -23,6 +24,13 @@ export class MongoDriver implements Driver {
     // -------------------------------------------------------------------------
     // Public Properties
     // -------------------------------------------------------------------------
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.mongodb;
+    }
 
     /**
      * Mongodb does not require to dynamically create query runner each time,

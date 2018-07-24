@@ -1,4 +1,4 @@
-import {getMetadataArgsStorage} from "../../";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
 import {RelationMetadataArgs} from "../../metadata-args/RelationMetadataArgs";
 
 /**

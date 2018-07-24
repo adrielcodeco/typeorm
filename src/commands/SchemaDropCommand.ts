@@ -1,4 +1,4 @@
-import {createConnection} from "../index";
+import {createConnection} from "../common-functionality/createConnection";
 import {Connection} from "../connection/Connection";
 import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
 const chalk = require("chalk");

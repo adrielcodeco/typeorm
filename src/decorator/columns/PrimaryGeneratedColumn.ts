@@ -1,4 +1,5 @@
-import {ColumnOptions, getMetadataArgsStorage} from "../../";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
+import {ColumnOptions} from "../options/ColumnOptions";
 import {PrimaryGeneratedColumnNumericOptions} from "../options/PrimaryGeneratedColumnNumericOptions";
 import {PrimaryGeneratedColumnUUIDOptions} from "../options/PrimaryGeneratedColumnUUIDOptions";
 import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs";

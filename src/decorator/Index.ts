@@ -1,4 +1,5 @@
-import {getMetadataArgsStorage, IndexOptions} from "../";
+import {getMetadataArgsStorage} from "../common-functionality/getMetadataArgsStorage";
+import {IndexOptions} from "../decorator/options/IndexOptions";
 import {IndexMetadataArgs} from "../metadata-args/IndexMetadataArgs";
 
 /**

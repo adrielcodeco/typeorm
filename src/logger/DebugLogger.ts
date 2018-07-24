@@ -1,5 +1,5 @@
 import {Logger} from "./Logger";
-import {QueryRunner} from "../";
+import {QueryRunner} from "../query-runner/QueryRunner";
 import {PlatformTools} from "../platform/PlatformTools";
 
 /**

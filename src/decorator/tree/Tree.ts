@@ -1,4 +1,4 @@
-import {getMetadataArgsStorage} from "../../";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
 import {TreeMetadataArgs} from "../../metadata-args/TreeMetadataArgs";
 import {TreeType} from "../../metadata/types/TreeTypes";
 

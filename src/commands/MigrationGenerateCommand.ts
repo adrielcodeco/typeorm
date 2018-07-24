@@ -1,7 +1,7 @@
 import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
 import {CommandUtils} from "./CommandUtils";
 import {Connection} from "../connection/Connection";
-import {createConnection} from "../index";
+import {createConnection} from "../common-functionality/createConnection";
 import {MysqlDriver} from "../driver/mysql/MysqlDriver";
 import {camelCase} from "../util/StringUtils";
 

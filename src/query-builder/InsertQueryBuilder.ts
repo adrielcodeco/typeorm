@@ -14,7 +14,7 @@ import {ReturningResultsEntityUpdator} from "./ReturningResultsEntityUpdator";
 import {AbstractSqliteDriver} from "../driver/sqlite-abstract/AbstractSqliteDriver";
 import {SqljsDriver} from "../driver/sqljs/SqljsDriver";
 import {BroadcasterResult} from "../subscriber/BroadcasterResult";
-import {EntitySchema} from "../";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 import {OracleDriver} from "../driver/oracle/OracleDriver";
 
 /**

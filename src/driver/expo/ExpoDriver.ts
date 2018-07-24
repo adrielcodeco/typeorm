@@ -1,3 +1,4 @@
+import {DriverType} from "../DriverType";
 import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
 import {ExpoConnectionOptions} from "./ExpoConnectionOptions";
 import {ExpoQueryRunner} from "./ExpoQueryRunner";
@@ -15,6 +16,13 @@ declare const window: Window;
 export class ExpoDriver extends AbstractSqliteDriver {
     options: ExpoConnectionOptions;
     
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.expo;
+    }
+
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------

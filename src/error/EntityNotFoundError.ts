@@ -1,5 +1,5 @@
 import {ObjectType} from "../common/ObjectType";
-import {EntitySchema} from "../index";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 
 /**
  * Thrown when no result could be found in methods which are not allowed to return undefined or an empty set.

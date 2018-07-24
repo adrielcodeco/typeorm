@@ -11,7 +11,7 @@ import {DeleteResult} from "./result/DeleteResult";
 import {ReturningStatementNotSupportedError} from "../error/ReturningStatementNotSupportedError";
 import {SqljsDriver} from "../driver/sqljs/SqljsDriver";
 import {BroadcasterResult} from "../subscriber/BroadcasterResult";
-import {EntitySchema} from "../index";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 
 /**
  * Allows to build complex sql queries in a fashion way and execute those queries.

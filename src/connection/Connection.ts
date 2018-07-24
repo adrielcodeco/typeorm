@@ -30,10 +30,10 @@ import {QueryResultCache} from "../cache/QueryResultCache";
 import {SqljsEntityManager} from "../entity-manager/SqljsEntityManager";
 import {RelationLoader} from "../query-builder/RelationLoader";
 import {RelationIdLoader} from "../query-builder/RelationIdLoader";
-import {EntitySchema} from "../";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver";
 import {MysqlDriver} from "../driver/mysql/MysqlDriver";
-import {PromiseUtils} from "../";
+import {PromiseUtils} from "../util/PromiseUtils";
 
 /**
  * Connection is a single database ORM connection to a specific database.

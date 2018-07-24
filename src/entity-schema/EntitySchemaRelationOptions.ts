@@ -3,7 +3,7 @@ import {RelationType} from "../metadata/types/RelationTypes";
 import {JoinTableMultipleColumnsOptions} from "../decorator/options/JoinTableMuplipleColumnsOptions";
 import {OnDeleteType} from "../metadata/types/OnDeleteType";
 import {OnUpdateType} from "../metadata/types/OnUpdateType";
-import {JoinTableOptions} from "../index";
+import {JoinTableOptions} from "../decorator/options/JoinTableOptions";
 
 export interface EntitySchemaRelationOptions {
 

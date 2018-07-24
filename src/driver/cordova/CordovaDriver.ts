@@ -1,3 +1,5 @@
+
+import {DriverType} from "../DriverType";
 import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
 import {CordovaConnectionOptions} from "./CordovaConnectionOptions";
 import {CordovaQueryRunner} from "./CordovaQueryRunner";
@@ -16,6 +18,13 @@ declare var window: Window;
 export class CordovaDriver extends AbstractSqliteDriver {
     options: CordovaConnectionOptions;
     
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.cordova;
+    }
+
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------

@@ -16,7 +16,7 @@ import {ColumnMetadata} from "../metadata/ColumnMetadata";
 import {SqljsDriver} from "../driver/sqljs/SqljsDriver";
 import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver";
 import {OracleDriver} from "../driver/oracle/OracleDriver";
-import {EntitySchema} from "../";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 import {FindOperator} from "../find-options/FindOperator";
 
 // todo: completely cover query builder with tests

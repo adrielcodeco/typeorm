@@ -1,4 +1,5 @@
 import {Driver} from "../Driver";
+import {DriverType} from "../DriverType";
 import {ConnectionIsNotSetError} from "../../error/ConnectionIsNotSetError";
 import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
 import {OracleQueryRunner} from "./OracleQueryRunner";
@@ -26,6 +27,13 @@ export class OracleDriver implements Driver {
     // -------------------------------------------------------------------------
     // Public Properties
     // -------------------------------------------------------------------------
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.oracle;
+    }
 
     /**
      * Connection used by driver.

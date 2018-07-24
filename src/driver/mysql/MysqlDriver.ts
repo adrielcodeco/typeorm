@@ -1,4 +1,5 @@
 import {Driver} from "../Driver";
+import {DriverType} from "../DriverType";
 import {ConnectionIsNotSetError} from "../../error/ConnectionIsNotSetError";
 import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
 import {DriverUtils} from "../DriverUtils";
@@ -26,6 +27,13 @@ export class MysqlDriver implements Driver {
     // -------------------------------------------------------------------------
     // Public Properties
     // -------------------------------------------------------------------------
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.mysql;
+    }
 
     /**
      * Connection used by driver.

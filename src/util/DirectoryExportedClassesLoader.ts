@@ -1,5 +1,5 @@
 import {PlatformTools} from "../platform/PlatformTools";
-import {EntitySchema} from "../index";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 
 /**
  * Loads all exported classes from the given directory.

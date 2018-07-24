@@ -1,3 +1,4 @@
+import {DriverType} from "../DriverType";
 import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
 import {SqljsConnectionOptions} from "./SqljsConnectionOptions";
 import {SqljsQueryRunner} from "./SqljsQueryRunner";
@@ -19,6 +20,13 @@ declare var window: Window;
 export class SqljsDriver extends AbstractSqliteDriver {
     // The driver specific options.
     options: SqljsConnectionOptions;
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.sqljs;
+    }
 
     // -------------------------------------------------------------------------
     // Constructor

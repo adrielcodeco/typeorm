@@ -1,3 +1,4 @@
+import {DriverType} from "./DriverType";
 import {QueryRunner} from "../query-runner/QueryRunner";
 import {ColumnMetadata} from "../metadata/ColumnMetadata";
 import {ObjectLiteral} from "../common/ObjectLiteral";
@@ -13,6 +14,11 @@ import {EntityMetadata} from "../metadata/EntityMetadata";
  * Driver organizes TypeORM communication with specific database management system.
  */
 export interface Driver {
+
+    /**
+     * Driver type.
+     */
+    type: DriverType;
 
     /**
      * Connection options.

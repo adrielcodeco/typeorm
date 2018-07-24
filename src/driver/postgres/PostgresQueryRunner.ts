@@ -15,9 +15,9 @@ import {TableIndexOptions} from "../../schema-builder/options/TableIndexOptions"
 import {TableUnique} from "../../schema-builder/table/TableUnique";
 import {BaseQueryRunner} from "../../query-runner/BaseQueryRunner";
 import {OrmUtils} from "../../util/OrmUtils";
-import {PromiseUtils} from "../../";
+import {PromiseUtils} from "../../util/PromiseUtils";
 import {TableCheck} from "../../schema-builder/table/TableCheck";
-import {ColumnType} from "../../index";
+import {ColumnType} from "../../driver/types/ColumnTypes";
 import {IsolationLevel} from "../types/IsolationLevel";
 
 /**

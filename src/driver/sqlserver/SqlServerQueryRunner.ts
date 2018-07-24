@@ -17,7 +17,8 @@ import {TableUnique} from "../../schema-builder/table/TableUnique";
 import {TableCheck} from "../../schema-builder/table/TableCheck";
 import {BaseQueryRunner} from "../../query-runner/BaseQueryRunner";
 import {Broadcaster} from "../../subscriber/Broadcaster";
-import {ColumnType, PromiseUtils} from "../../index";
+import {ColumnType} from "../../driver/types/ColumnTypes";
+import {PromiseUtils} from "../../util/PromiseUtils";
 import {IsolationLevel} from "../types/IsolationLevel";
 
 /**

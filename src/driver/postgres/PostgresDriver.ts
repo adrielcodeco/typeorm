@@ -1,4 +1,5 @@
 import {Driver} from "../Driver";
+import {DriverType} from "../DriverType";
 import {ConnectionIsNotSetError} from "../../error/ConnectionIsNotSetError";
 import {ObjectLiteral} from "../../common/ObjectLiteral";
 import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
@@ -27,6 +28,13 @@ export class PostgresDriver implements Driver {
     // -------------------------------------------------------------------------
     // Public Properties
     // -------------------------------------------------------------------------
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.postgres;
+    }
 
     /**
      * Connection used by driver.

@@ -1,3 +1,4 @@
+import {DriverType} from "../DriverType";
 import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
 import {ReactNativeConnectionOptions} from "./ReactNativeConnectionOptions";
 import {ReactNativeQueryRunner} from "./ReactNativeQueryRunner";
@@ -9,6 +10,13 @@ import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstal
 export class ReactNativeDriver extends AbstractSqliteDriver {
     options: ReactNativeConnectionOptions;
     
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.reactnative;
+    }
+
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------

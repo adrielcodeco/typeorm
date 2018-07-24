@@ -1,3 +1,4 @@
+import {DriverType} from "../driver/DriverType";
 import {Table} from "./table/Table";
 import {TableColumn} from "./table/TableColumn";
 import {TableForeignKey} from "./table/TableForeignKey";
@@ -13,7 +14,6 @@ import {TableUtils} from "./util/TableUtils";
 import {TableColumnOptions} from "./options/TableColumnOptions";
 import {PostgresDriver} from "../driver/postgres/PostgresDriver";
 import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver";
-import {MysqlDriver} from "../driver/mysql/MysqlDriver";
 import {TableUnique} from "./table/TableUnique";
 import {TableCheck} from "./table/TableCheck";
 
@@ -265,7 +265,7 @@ export class RdbmsSchemaBuilder implements SchemaBuilder {
 
     protected async dropOldChecks(): Promise<void> {
         // Mysql does not support check constraints
-        if (this.connection.driver instanceof MysqlDriver)
+        if (this.connection.driver.type === DriverType.mysql)
             return;
 
         await PromiseUtils.runInSequence(this.entityToSyncMetadatas, async metadata => {
@@ -424,7 +424,7 @@ export class RdbmsSchemaBuilder implements SchemaBuilder {
 
             // drop all composite uniques related to this column
             // Mysql does not support unique constraints.
-            if (!(this.connection.driver instanceof MysqlDriver)) {
+            if (!(this.connection.driver.type === DriverType.mysql)) {
                 await PromiseUtils.runInSequence(changedColumns, changedColumn => this.dropColumnCompositeUniques(metadata.tablePath, changedColumn.databaseName));
             }
 
@@ -471,7 +471,7 @@ export class RdbmsSchemaBuilder implements SchemaBuilder {
 
     protected async createNewChecks(): Promise<void> {
         // Mysql does not support check constraints
-        if (this.connection.driver instanceof MysqlDriver)
+        if (this.connection.driver.type === DriverType.mysql)
             return;
 
         await PromiseUtils.runInSequence(this.entityToSyncMetadatas, async metadata => {

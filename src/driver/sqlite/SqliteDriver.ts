@@ -1,3 +1,4 @@
+import {DriverType} from "../DriverType";
 import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
 import {SqliteQueryRunner} from "./SqliteQueryRunner";
 import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError";
@@ -16,6 +17,13 @@ export class SqliteDriver extends AbstractSqliteDriver {
     // -------------------------------------------------------------------------
     // Public Properties
     // -------------------------------------------------------------------------
+
+    /**
+     * Driver type.
+     */
+    get type (): DriverType {
+        return DriverType.sqlite;
+    }
 
     /**
      * Connection options.

@@ -15,7 +15,8 @@ import {Broadcaster} from "../../subscriber/Broadcaster";
 import {BaseQueryRunner} from "../../query-runner/BaseQueryRunner";
 import {OrmUtils} from "../../util/OrmUtils";
 import {TableCheck} from "../../schema-builder/table/TableCheck";
-import {ColumnType, PromiseUtils} from "../../index";
+import {ColumnType} from "../../driver/types/ColumnTypes";
+import {PromiseUtils} from "../../util/PromiseUtils";
 import {IsolationLevel} from "../types/IsolationLevel";
 
 /**

@@ -1,4 +1,5 @@
-import {getMetadataArgsStorage, JoinTableOptions} from "../../";
+import {JoinTableOptions} from "../options/JoinTableOptions";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
 import {JoinTableMetadataArgs} from "../../metadata-args/JoinTableMetadataArgs";
 import {JoinTableMultipleColumnsOptions} from "../options/JoinTableMuplipleColumnsOptions";
 

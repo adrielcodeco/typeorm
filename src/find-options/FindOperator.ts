@@ -1,5 +1,5 @@
 import {FindOperatorType} from "./FindOperatorType";
-import {Connection} from "../";
+import {Connection} from "../connection/Connection";
 
 /**
  * Find Operator used in Find Conditions.

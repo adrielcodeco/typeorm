@@ -1,4 +1,5 @@
-import {getMetadataArgsStorage, SelectQueryBuilder} from "../../";
+import {getMetadataArgsStorage} from "../../common-functionality/getMetadataArgsStorage";
+import {SelectQueryBuilder} from "../../query-builder/SelectQueryBuilder";
 import {RelationIdMetadataArgs} from "../../metadata-args/RelationIdMetadataArgs";
 
 /**

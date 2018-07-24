@@ -50,7 +50,7 @@ import {UpdateResult} from "../query-builder/result/UpdateResult";
 import {RemoveOptions} from "../repository/RemoveOptions";
 import {DeleteResult} from "../query-builder/result/DeleteResult";
 import {EntityMetadata} from "../metadata/EntityMetadata";
-import {EntitySchema} from "../index";
+import {EntitySchema} from "../entity-schema/EntitySchema";
 
 /**
  * Entity manager supposed to work with any entity, automatically find its repository and call its methods,
